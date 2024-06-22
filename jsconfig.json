@@ -1,7 +1,29 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": [
+				"components/*"
+			],
+			"@/styles/*": [
+				"styles/*"
+			],
+			"@/utils/*": [
+				"utils/*"
+			],
+			"@/icons/*": [
+				"icons/*"
+			],
+			"@/config/*": [
+				"config/*"
+			],
+			"@/atoms/*": [
+				"atoms/*"
+			],
+			"@/types/*": [
+				"types/*"
+			],
+		},
+		"jsx": "preserve",
+	}
 }

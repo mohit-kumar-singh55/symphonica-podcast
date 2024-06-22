@@ -1,3 +1,20 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": [
+		"next",
+		"next/core-web-vitals",
+		"eslint:recommended",
+		"next/babel"
+	],
+	"globals": {
+		"React": "readonly" // by doing this we will no longer need to import from "react" in every component, since it will be globally available
+	},
+	"rules": {
+		"no-unused-vars": [
+			0, // 0 -> off, 1 -> warning, 2 -> error
+			{
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		]
+	}
 }
